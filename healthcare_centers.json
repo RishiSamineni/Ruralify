@@ -1,0 +1,132 @@
+[
+    {
+        "name": "All India Institute of Medical Sciences",
+        "location": "New Delhi",
+        "state": "Delhi",
+        "address": "Ansari Nagar, New Delhi - 110029",
+        "contact": "+91-11-26588500",
+        "lat": 28.5672,
+        "lng": 77.2100,
+        "type": "Public",
+        "services": ["Emergency", "Cardiology", "Neurology", "Orthopedics", "Pediatrics"]
+    },
+    {
+        "name": "Fortis Hospital",
+        "location": "Mumbai",
+        "state": "Maharashtra",
+        "address": "Mulund Goregaon Link Road, Bhandup West, Mumbai - 400078",
+        "contact": "+91-22-67994444",
+        "lat": 19.1551,
+        "lng": 72.9646,
+        "type": "Private",
+        "services": ["Cardiology", "Oncology", "Orthopedics", "Nephrology", "Pediatrics"]
+    },
+    {
+        "name": "Apollo Hospital",
+        "location": "Chennai",
+        "state": "Tamil Nadu",
+        "address": "21 Greams Lane, Off Greams Road, Chennai - 600006",
+        "contact": "+91-44-28293333",
+        "lat": 13.0604,
+        "lng": 80.2554,
+        "type": "Private",
+        "services": ["Emergency", "Cardiology", "Neurology", "Orthopedics", "Gastroenterology"]
+    },
+    {
+        "name": "Christian Medical College",
+        "location": "Vellore",
+        "state": "Tamil Nadu",
+        "address": "IDA Scudder Road, Vellore - 632004",
+        "contact": "+91-416-2281000",
+        "lat": 12.9249,
+        "lng": 79.1356,
+        "type": "Private",
+        "services": ["Emergency", "Cardiology", "Endocrinology", "Ophthalmology", "Pediatrics"]
+    },
+    {
+        "name": "Narayana Health",
+        "location": "Bengaluru",
+        "state": "Karnataka",
+        "address": "No. 258/A, Bommasandra Industrial Area, Bengaluru - 560099",
+        "contact": "+91-80-27835000",
+        "lat": 12.8342,
+        "lng": 77.6867,
+        "type": "Private",
+        "services": ["Cardiology", "Neurology", "Oncology", "Orthopedics", "Transplants"]
+    },
+    {
+        "name": "Postgraduate Institute of Medical Education and Research (PGIMER)",
+        "location": "Chandigarh",
+        "state": "Chandigarh",
+        "address": "Sector 12, Chandigarh - 160012",
+        "contact": "+91-172-2747585",
+        "lat": 30.7399,
+        "lng": 76.7794,
+        "type": "Public",
+        "services": ["Emergency", "Cardiology", "Gastroenterology", "Neurology", "Oncology"]
+    },
+    {
+        "name": "Apollo Hospitals",
+        "address": "Health City, Arilova, Visakhapatnam, Andhra Pradesh 530040",
+        "lat": 17.7658,
+        "lng": 83.2565,
+        "phone": "+91 891 272 7272",
+        "services": ["Emergency", "Cardiology", "Orthopedics", "Neurology", "Pediatrics"]
+    },
+    {
+        "name": "Care Hospitals",
+        "address": "Ramnagar, Visakhapatnam, Andhra Pradesh 530002",
+        "lat": 17.7176,
+        "lng": 83.3016,
+        "phone": "+91 891 616 5656",
+        "services": ["Cardiology", "Critical Care", "ENT", "Orthopedics", "Neurology"]
+    },
+    {
+        "name": "King George Hospital",
+        "address": "Maharanipeta, Visakhapatnam, Andhra Pradesh 530002",
+        "lat": 17.7111,
+        "lng": 83.3038,
+        "phone": "+91 891 256 3322",
+        "services": ["Emergency", "General Surgery", "Pediatrics", "Oncology", "Nephrology"]
+    },
+    {
+        "name": "Medicover Hospitals",
+        "address": "Sector-1, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",
+        "lat": 17.7386,
+        "lng": 83.3164,
+        "phone": "+91 891 281 0000",
+        "services": ["Orthopedics", "Cardiology", "Gastroenterology", "Neurology", "Pulmonology"]
+    },
+    {
+        "name": "SevenHills Hospital",
+        "address": "Rockdale Layout, Visakhapatnam, Andhra Pradesh 530002",
+        "lat": 17.7143,
+        "lng": 83.3061,
+        "phone": "+91 891 252 6666",
+        "services": ["Cardiology", "Oncology", "Orthopedics", "Neurosurgery", "Pediatrics"]
+    },
+    {
+        "name": "Queens NRI Hospital",
+        "address": "Seethammadara, Visakhapatnam, Andhra Pradesh 530013",
+        "lat": 17.7389,
+        "lng": 83.3153,
+        "phone": "+91 891 279 9999",
+        "services": ["Gynecology", "Pediatrics", "Cardiology", "Nephrology", "ENT"]
+    },
+    {
+        "name": "Mahatma Gandhi Cancer Hospital",
+        "address": "Sector-7, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",
+        "lat": 17.7397,
+        "lng": 83.3214,
+        "phone": "+91 891 255 5522",
+        "services": ["Oncology", "Radiology", "Surgical Oncology", "Palliative Care"]
+    },
+    {
+        "name": "Manipal Hospitals",
+        "address": "Venkojipalem, Visakhapatnam, Andhra Pradesh 530017",
+        "lat": 17.7391,
+        "lng": 83.3191,
+        "phone": "+91 891 250 6565",
+        "services": ["Emergency", "Cardiology", "Neurology", "Nephrology", "Pediatrics"]
+    }
+]

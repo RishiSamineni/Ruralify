@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Finder</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    .container {
+      text-align: center;
+      width: 80%;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Book Finder</h2>
+    <input type="text" id="bookInput" placeholder="Enter the book name">
+    <button onclick="findBook()">Search</button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script>
+    // Predefined books
+    const books = {
+      "The Great Gatsby": "link/to/the-great-gatsby.pdf",
+      "Moby Dick": "link/to/moby-dick.pdf",
+      "Pride and Prejudice": "link/to/pride-and-prejudice.pdf"
+    };
+
+    function findBook() {
+      const bookInput = document.getElementById("bookInput").value.trim();
+
+      if (bookInput in books) {
+        // Redirect to the book details page with the book title as a query parameter
+        window.location.href = `book-details.html?book=${encodeURIComponent(bookInput)}`;
+      } else {
+        // Book not found, show a pop-up alert
+        alert("Book not found.");
+      }
+    }
+  </script>
+</body>
+</html>

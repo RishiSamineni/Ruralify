@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Details</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    .container {
+      text-align: center;
+      width: 80%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Book Details</h2>
+    <div id="bookResult" class="result"></div>
+    <button onclick="goBack()">Go Back</button>
+  </div>
+
+  <script>
+    // Predefined books
+    const books = {
+      "The Great Gatsby": "link/to/the-great-gatsby.pdf",
+      "Moby Dick": "link/to/moby-dick.pdf",
+      "Pride and Prejudice": "link/to/pride-and-prejudice.pdf"
+    };
+
+    // Function to extract query parameters from the URL
+    function getQueryParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Function to handle the book result
+    function showBookDetails() {
+      const bookName = getQueryParameter("book");
+
+      if (bookName && books[bookName]) {
+        // Display the book details with a link to download the book
+        document.getElementById("bookResult").innerHTML = `
+          <p>Book found! Download it <a href="${books[bookName]}" target="_blank">here</a>.</p>
+        `;
+      } else {
+        // Book not found, show an error message
+        document.getElementById("bookResult").innerHTML = "<p style='color: red;'>No book found.</p>";
+        alert("No book found.");
+      }
+    }
+
+    // Call the function to display the result
+    showBookDetails();
+
+    // Function to navigate back to the main page
+    function goBack() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
